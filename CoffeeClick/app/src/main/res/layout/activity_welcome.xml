@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fullscreen background image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coffee_background" />
+
+    <!-- Overlay text and button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="30dp">
+
+        <!-- Fancy App Title -->
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Coffee Click"
+            android:textSize="60sp"
+            android:textStyle="bold|italic"
+            android:fontFamily="cursive"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="80dp" />
+
+        <!-- Tagline -->
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - Creating coffee connections -"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#F0EDE5"
+            android:layout_marginTop="8dp" />
+
+        <!-- Push the button to bottom -->
+        <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <!-- Get Started Button -->
+        <Button
+            android:id="@+id/btnGetStarted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Started"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6F4E37"
+            android:layout_marginBottom="40dp" />
+
+    </LinearLayout>
+</FrameLayout>

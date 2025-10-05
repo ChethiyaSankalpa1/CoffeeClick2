@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.coffeeclick">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" 
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CoffeeClick"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CoffeeClick">
+
+        <!-- Home screen after login -->
+        <activity android:name=".HomeActivity" android:exported="false" />
+
+        <!-- Login screen -->
+        <activity android:name=".LoginActivity" />
+
+        <!-- Register screen -->
+        <activity android:name=".RegisterActivity" />
+
+        <!-- Product detail screen -->
+        <activity android:name=".ProductDetailActivity" />
+
+        <!-- Coffee detail screen -->
+        <activity android:name=".CoffeeDetailActivity" /> <!-- Fixed -->
+
+        <!-- Cart screen -->
+        <activity android:name=".CartActivity" />
+
+        <!-- Checkout screen -->
+        <activity android:name=".CheckoutActivity" />
+
+        <!-- User Activities -->
+        <activity android:name=".ChatBotActivity" />
+        <activity android:name=".MyOrdersActivity" />
+        <activity android:name=".ProfileActivity" />
+
+        <!-- Admin Activities -->
+        <activity android:name=".AdminDashboardActivity" />
+        <activity android:name=".UserApprovalActivity" />
+        <activity android:name=".OrderHistoryActivity" />
+        <activity android:name=".ManageItemsActivity" />
+        <activity android:name=".ViewItemsActivity" />
+
+        <!-- First screen (launcher) -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

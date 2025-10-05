@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/different">
+
+    <!-- Welcome message -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, User"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvWelcomeSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWelcome"
+        android:text="Check out our coffee menu"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="4dp"/>
+
+    <!-- RecyclerView for coffee menu -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCoffeeMenu"
+        android:layout_below="@id/tvWelcomeSmall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Cart icon with badge -->
+    <FrameLayout
+        android:id="@+id/cartContainer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/ivCart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_cart"
+            android:background="@drawable/circle_background_green"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/tvCartBadge"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end|top"
+            android:background="@drawable/circle_badge_white"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+</RelativeLayout>
