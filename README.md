@@ -1,10 +1,3 @@
----
-title: "☕ CoffeeClick - Coffee Shop Mobile Application 📱"
-author: "Your Name"
-date: "`r Sys.Date()`"
-output: html_document
----
-
 # Overview
 
 **CoffeeClick** is a full-stack Android mobile application developed using **Java, XML, and Android Studio**, designed to provide a seamless coffee ordering experience. It features **user authentication, real-time cart management, admin controls, and persistent data storage**.  
